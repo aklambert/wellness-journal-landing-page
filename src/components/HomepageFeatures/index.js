@@ -2,39 +2,69 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
+// Define features to be listed in section briefly showcasing the main features
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Save custom exercises',
+    Svg: require('@site/static/img/undraw_workout_wqgp.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Add exercises to use in workouts, giving them custom descriptions
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Build custom workouts',
+    Svg: require('@site/static/img/undraw_athletes-training_koqa.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Use your custom exercises to build your own personalized workouts
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Track workout progression',
+    Svg: require('@site/static/img/undraw_fitness-tracker_y5q5.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        As you progress through a workout, track which exercises are complete
+      </>
+    ),
+  },
+  {
+    title: 'Log workout completion',
+    Svg: require('@site/static/img/undraw_checklist_bwxa.svg').default,
+    description: (
+      <>
+        After finishing a workout, log it as complete. You can then see logs with a date, and name of the workout completed
+      </>
+    ),
+  },
+  {
+    title: 'Journal',
+    Svg: require('@site/static/img/undraw_personal-notebook_blje.svg').default,
+    description: (
+      <>
+        Use the journal feature to write notes, or journal about anything you want to 
+      </>
+    ),
+  },
+  {
+    title: 'Timer',
+    Svg: require('@site/static/img/undraw_time-management_fedt.svg').default,
+    description: (
+      <>
+        Set a countdown timer for timing exercises, using a focus timer, or use it for whatever you'd like
       </>
     ),
   },
 ];
 
+/**
+ * Feature component, containing a brief description of a feature, and an image 
+ * 
+ * @returns a Feature component
+ */
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
@@ -49,6 +79,13 @@ function Feature({Svg, title, description}) {
   );
 }
 
+
+/**
+ * Build the homepage features section, using the defined list of features 
+ * to form a Feature component for each feature
+ * 
+ * @returns the HomepageFeatures component
+ */
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
