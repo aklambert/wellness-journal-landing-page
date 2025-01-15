@@ -17,11 +17,12 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
+         {/**  commenting this out for now, until there is a place to take the user to when they click 'get started'
+          * <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+            to="/">
+            Get Started
+          </Link> */}
         </div>
       </div>
     </header>
@@ -29,11 +30,10 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Home"
+      description="Customize fitness tracking and journaling all in one place. Wellness journal makes life easier for those who like to build thier own workouts.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
