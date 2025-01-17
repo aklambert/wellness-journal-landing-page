@@ -60,6 +60,12 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'documentationSidebar',
+            position: 'left',
+            label: 'Guides',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
@@ -73,8 +79,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Documentation',
+                to: '/docs/Documentation/documentation-home',
               },
             ],
           },
