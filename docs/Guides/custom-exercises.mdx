@@ -1,0 +1,61 @@
+import ExerciseSvg from '../../static/img/undraw_workout_wqgp.svg';
+import exercisesScreen from '../../static/img/exercises-screen.png';
+import newExercise from '../../static/img/new-exercise.png';
+import selectExercise from '../../static/img/select-exercise.png';
+import saveExerciseEdit from '../../static/img/save-exercise-edit.png';
+import deleteExercise from '../../static/img/delete-exercise.png';
+import cannotDeleteExercise from '../../static/img/cannot-delete-exercise.png';
+
+
+# Custom Exercises
+You can define personalized exercises to use in workouts you build.
+
+<ExerciseSvg width={600} height={400}/>
+
+## Save a new exercise
+To save a new exercise, follow the following steps: 
+
+1. Click the **+** button in the bottom right corner of the screen on the **Exercises** screen: 
+
+   <img src={exercisesScreen} style={{width: 240}} />
+
+2. You will then be taken to the **Add Exercise** screen, where you can enter exercise information for your new custom exercise. You can add as much or as little information as you’d like. Additionally, there are no rules as to what you enter for each of the exercise information items, to maximize customization abilities
+3. When you are finished, click **Save** to save your new custom exercise: 
+ 
+   <img src={newExercise} style={{width: 180}} />
+
+4. Your new exercise will now be saved, and you will be taken back to the **Exercises** screen
+
+## Edit an exercise
+To edit a saved exercise, follow these steps: 
+
+1. Navigate to the **Exercises** page, where all your saved exercises are listed 
+2. Click on the exercise you would like to edit 
+
+     <img src={selectExercise} style={{width: 240}} />
+
+3. You will be taken to the **Update Exercise** screen, where you can adjust any of the information you'd like to
+ 
+4. When you’re ready to save changes, click the **Save** button at the bottom of the screen: 
+
+   <img src={saveExerciseEdit} style={{width: 200}} />
+
+5. Your changes will then be saved, and you will then be taken back to the **Exercises** screen
+
+## Delete an exercise
+To delete a saved exercise, follow these steps: 
+
+1. Navigate to the **Update Exercise** screen for the exercise you would like to delete (see steps above for editing an exercise) 
+2. Click the **Delete** button near the bottom of the screen: 
+ 
+    <img src={deleteExercise} style={{width: 240}} />
+
+3. The exercise will then be deleted, and you will be redirected back to the **Exercises** screen
+
+   :::warning Note  
+
+      Exercises that are part of existing workouts cannot be deleted. If you try to delete an exercise belonging to a workout, you will see an error message appear, and the exercise will not be deleted
+
+   :::
+
+   <img src={cannotDeleteExercise} style={{width: 320}} />
