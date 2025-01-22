@@ -1,5 +1,5 @@
 # Wellness Journal Landing Page
-This is a landing page for an android app being developed, [called Wellness Journal](https://github.com/aklambert/Wellness-Journal). This is a mobile app that has fitness features, journaling features, and a timer feature. It is meant to be an app that has both finess and journaling features in one app to help people track both their physical and mental health.
+This is a landing page for an android app being developed, called [Wellness Journal](https://github.com/aklambert/Wellness-Journal). This is a mobile app that has fitness features, journaling features, and a timer feature. It is meant to be an app that has both finess and journaling features in one app to help people track both their physical and mental health.
 
 
 ## Website
