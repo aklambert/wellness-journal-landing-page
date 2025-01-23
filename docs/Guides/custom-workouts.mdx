@@ -1,0 +1,82 @@
+import WorkoutSvg from '../../static/img/undraw_athletes-training_koqa.svg';
+import addWorkoutScreen from '../../static/img/add-workout-screen.png';
+import saveWorkout from '../../static/img/save-workout.png';
+import selectWorkout from '../../static/img/select-workout.png';
+import saveWorkoutEdit from '../../static/img/save-workout-edit.png';
+import deleteWorkout from '../../static/img/delete-workout.png';
+import cannotDeleteWorkout from '../../static/img/cannot-delete-workout.png';
+import workoutProgressionBtn from '../../static/img/workout-progression-btn.png';
+import completeWorkout from '../../static/img/complete-workout.png';
+import fitnessFeaturesImg from '../../static/img/fitness-features-screen.png';
+
+# Custom Workouts
+
+Build custom workouts using exercises you've added.
+
+Access **Workout** features by selecting the **Fitness** bottom navigation icon, then selecting **Workouts**
+
+   <img src={fitnessFeaturesImg} style={{width: 240}} />
+
+## Save a new workout
+To save a new workout, follow the following steps: 
+
+1. Click the **+** button in the bottom right corner of the screen on the Workouts screen: 
+ 
+    <img src={addWorkoutScreen} style={{width: 240}} />
+
+2. You will then be taken to the **Add Workout** screen, where you can enter workout information for your new custom workout. 
+    You can add as much or as little information as you’d like. 
+    There will also be a checklist of all your saved exercises, where you can select any exercise to add to your new workout  
+3. Once you’re finished entering information for your workout, click **Save** at the bottom of the screen: 
+
+    <img src={saveWorkout} style={{width: 200}} />
+
+4. Your new workout will now be saved, and you will be taken back to the **Workouts** Screen
+
+## Edit a workout
+To edit a saved workout, follow these steps: 
+
+1. Navigate to the **Workouts** page, where all your saved workouts are listed 
+2. Click on the workout you would like to edit:
+ 
+        <img src={selectWorkout} style={{width: 240}} />
+
+3. You will be taken to the **Update Workout** screen, where you can adjust any of the information you would like to
+4. When you’re ready to save changes, click the **Save** button at the bottom of the screen: 
+ 
+   <img src={saveWorkoutEdit} style={{width: 200}} /> 
+
+5. Your changes will then be saved, and you will then be taken back to the **Workouts** screen
+
+## Delete a workout
+To delete a saved workout, follow these steps: 
+
+1. Navigate to the **Update Workout** screen for the exercise you would like to delete (see steps above for editing a workout) 
+2. Click the **Delete** button near the bottom of the screen: 
+ 
+   <img src={deleteWorkout} style={{width: 200}} /> 
+    
+3. The workout will then be deleted, and you will be redirected back to the **Workouts** screen
+
+    :::warning Note  
+
+        The last saved workout currently cannot be deleted to keep the app working correctly. 
+        It can, however, still have all of its information adjusted. 
+        If you try to delete the most recently added workout, there will be a message displayed, and the workout will not be deleted
+
+    :::
+
+   <img src={cannotDeleteWorkout} style={{width: 240}} /> 
+
+## View and progress through a workout
+To view a workout to complete, follow these steps: 
+
+1. Navigate to the **Workouts** page, where all your saved workouts are listed 
+2. Click the play icon on the workout you’d like to view and/ or complete: 
+
+       <img src={workoutProgressionBtn} style={{width: 200}} />  
+ 
+3. You will then be brought to a screen that shows the workout details including a checklist of exercises in that workout, and a timer. 
+    You can check off exercises as you complete them to keep track of your workout progress. 
+    
+    <img src={completeWorkout} style={{width: 180}} />  
