@@ -1,0 +1,42 @@
+import timerNavigation from '../../static/img/timer-navigation.png';
+import startTimer from '../../static/img/start-timer.png';
+import stopTimer from '../../static/img/stop-timer.png';
+import timerFinished from '../../static/img/timer-finished.png';
+
+# Timer
+
+There is a timer function available to use on the **Timer** screen. This is a basic countdown 
+timer that may be useful for workouts, setting focus timers, setting timers to switch between 
+standing and sitting, etc.  
+
+To use the timer, follow these steps: 
+ 
+1. Go to the **Timer** bottom navigation option
+
+    <img src={timerNavigation} style={{width: 240}} />
+
+2. The page will display input options for number of hours, minutes, and seconds 
+3. Enter the desired amount of time for the timer and click the **START TIMER** button.
+    Make sure the media volume on the phone and the computer (if running an emulator) are both turned up 
+    so you can hear when the timer goes off
+
+    <img src={startTimer} style={{width: 240}} />
+ 
+4. Once the timer is running, there is a display showing how much time is left, and a **STOP TIMER** button will appear as well 
+5. To cancel the timer, click the **STOP TIMER** button. 
+    The timer will then stop, and you will be able to start a new timer
+
+        <img src={stopTimer} style={{width: 240}} />
+    
+6. When a set timer finishes, an alarm will sound and the screen will display a message saying the timer is finished
+
+    <img src={timerFinished} style={{width: 200}} />
+ 
+    :::info Note
+
+        - The alarm does not repeat so that it is not too disruptive, for cases when the timer is used as a focus timer,
+        or a timer for reminding users to switch between sitting and standing while working
+        - The timer will keep running as long as the timer page is open. If you leave the page, or close the app, the timer will cancel. 
+            Leaving the timer page open while leaving the app will not cancel the timer
+
+    :::
