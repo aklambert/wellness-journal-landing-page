@@ -1,0 +1,69 @@
+import fitnessFeaturesImg from '../../static/img/fitness-features-screen.png';
+import logWorkout from '../../static/img/log-workout.png';
+import workoutLogScreen from '../../static/img/workout-log-screen.png';
+import selectWorkoutLog from '../../static/img/select-workout-log.png';
+import workoutLogDetails from '../../static/img/workout-log-details.png';
+import workoutLogWithDeletedWorkout from '../../static/img/workout-log-with-deleted-workout.png';
+import workoutLogDetailsWithDeletedWorkout from '../../static/img/workout-log-details-with-deleted-workout.png';
+import deleteWorkoutLog from '../../static/img/delete-workout-log.png';
+import styles from '../docs.module.css';
+
+# Workout Logs
+Use Workout Logs to track what date you completed a certain workout.
+
+Access **Workout Logs** by selecting the **Fitness** bottom navigation icon, then selecting **Workout Logs**
+
+   <img src={fitnessFeaturesImg} style={{width: 240}} />
+
+## Save a new workout log
+
+To log a workout, follow these steps: 
+
+1. Follow the steps for viewing details and exercises of a workout to complete described [here](./custom-workouts#view-and-progress-through-a-workout),
+ for navigating to the **Complete Workout** screen 
+2. When you want to log the workout as completed, click the **LOG WORKOUT** button at the bottom of the screen: 
+
+    <img src={logWorkout} style={{width: 240}} />
+ 
+ 
+3. The workout will then be logged as completed, and you will be able to see the log added to the Workout Logs screen  
+
+    <img src={workoutLogScreen} style={{width: 180}} />
+
+
+## View workout log details
+To view a specific workout log and its details, follow these steps: 
+
+1. Navigate to the **Workout** Logs screen 
+2. Click a workout log you’d like to view 
+ 
+    <img src={selectWorkoutLog} style={{width: 240}} />
+ 
+3. You will then be taken to the Workout Log Details screen, where you can see the date and workout for the log 
+
+    :::warning Note
+        If a logged workout gets deleted, the workout log will say **Deleted 
+        Workout** for the name of the workout for the log, and the log itself will not be 
+        deleted.
+    ::: 
+
+    <div>
+        <img className={styles.imgRow} src={workoutLogDetails} style={{width: 180}} />
+
+        <img className={styles.imgRow} src={workoutLogDetailsWithDeletedWorkout} style={{width: 180}} />
+
+        <img className={styles.imgRow} src={workoutLogWithDeletedWorkout} style={{width: 180}} />
+    </div>
+
+
+## Delete a workout log
+
+To delete a saved workout log, follow these steps: 
+
+1. Follow the steps for viewing the details of a workout log, as described above 
+2. Click the **DELETE** button 
+
+    <img src={deleteWorkoutLog} style={{width: 180}} />
+
+
+3. The workout log will be deleted, and you will be redirected to the **Workout** Logs screen
